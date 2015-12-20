@@ -41,3 +41,27 @@ cacheSolve <- function(x, ...) {
 ## Example :
 ##source("makeCacheMatrix.R")
 ##source("cacheSolve.R")
+
+##Initialize Matrix
+##x = matrix(data = c(1,4,4,2) , nrow=2, ncol=2)
+##m = makeCacheMatrix(x)
+
+##m$get()
+##     [,1] [,2]
+##[1,]    1    4
+##[2,]    4    2
+
+##m$getInverse()
+##NULL
+
+##cacheSolve(m)
+##caching data
+##           [,1]        [,2]
+##[1,] -0.1428571  0.28571429
+##[2,]  0.2857143 -0.07142857
+
+##cacheSolve(m)
+##getting cached data
+##           [,1]        [,2]
+##[1,] -0.1428571  0.28571429
+##[2,]  0.2857143 -0.07142857
